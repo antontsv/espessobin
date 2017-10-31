@@ -47,3 +47,18 @@ connect
 kermit ~/kermit-connect.conf
 
 ```
+
+# LED
+
+When you connect DC 12V power, green LED lights up.
+I was looking if there is a way to dim or turn it off through GPIO.
+
+I don't see any so far.
+
+Looking as the board it is labeled "LED3".
+In [current schematics](http://espressobin.net/wp-content/uploads/2017/08/ESPRESSObin_V5_Schematics.pdf)
+
+Looks like it's directly connected to power through a resistor `R48`.
+There are couple capasitors and zener diodes around, which does not help.
+
+Why would you build in high intensity LED, for such a simple thing as indicating power?
